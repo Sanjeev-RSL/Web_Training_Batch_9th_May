@@ -65,3 +65,10 @@ header {
   background-color: gold;
   color: white;
 }
+
+/* media-queries for mobile and tablet */
+@media screen and (max-width: 480px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
