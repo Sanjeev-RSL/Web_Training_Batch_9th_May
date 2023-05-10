@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-upload__container">
+        <div class="image-upload__form">
+          <div class="image-input-row">
+            <label for="">Add Image:</label>
+            <input
+              type="file"
+              accept="image/png, image/jpeg, image/jpg"
+              name=""
+              id="image-input"
+            />
+          </div>
+          <div class="image-input-row">
+            <label for="image-name-upload">Image name:</label>
+            <input type="text" name="" id="image-name-upload" />
+          </div>
+          <div class="image-input-row">
+            <label for="image-description-upload">Description:</label>
+            <textarea
+              name=""
+              id="image-description-upload"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button onclick="uploadImage()">Submit</button>
+          <span onclick="closeModal()" class="close-btn">X</span>
+        </div>
+      </div>
+      <div>
+        <button onclick="openModal()" class="uploadImage-btn">
+          Upload Image
+        </button>
+      </div>
+      <div class="image-gallery__container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
